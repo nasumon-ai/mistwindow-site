@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MistWindow</title>
+<meta name="description" content="MistWindow — a launcher widget for Windows with any video or image as its background.">
+<link rel="alternate" hreflang="ja" href="ja/">
+<link rel="alternate" hreflang="en" href="en/">
+<link rel="icon" href="assets/img/favicon.png">
+<link rel="stylesheet" href="assets/site.css?v=4">
+<script>
+  // ブラウザの言語で日英のページへ送る(JS が無くても下のリンクで選べる)
+  location.replace((navigator.language || '').toLowerCase().startsWith('ja') ? 'ja/' : 'en/');
+</script>
+</head>
+<body>
+<main class="lang-pick">
+  <h1 class="section-title">MistWindow</h1>
+  <div class="cta">
+    <a class="btn btn-primary" href="ja/" hreflang="ja" lang="ja">日本語</a>
+    <a class="btn" href="en/" hreflang="en">English</a>
+  </div>
+</main>
+</body>
+</html>
