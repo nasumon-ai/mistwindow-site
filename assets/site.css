@@ -97,6 +97,8 @@ h1, h2, h3, p { margin: 0; }
 /* 画面写真:薄い地に載せ、枠と影は控えめに */
 .shot { margin: 20px 0 0; background: var(--shot-bg); border-radius: 10px; padding: 20px; display: grid; place-items: center; }
 .shot img { border-radius: 8px; box-shadow: 0 6px 24px rgb(0 0 0 / 0.18); }
+/* 何枚かを 1 枚に並べた絵(間は透明)。影は 1 枚ずつ絵に焼いてあるので、外枠の影は付けない */
+.shot-set img { border-radius: 0; box-shadow: none; }
 .shot figcaption, .gallery figcaption { font-size: 12.5px; color: var(--text-2); margin-top: 10px; text-align: center; }
 .shots-2 { display: grid; gap: 12px; margin-top: 20px; }
 @media (min-width: 760px) { .shots-2 { grid-template-columns: 1fr 1fr; } }
